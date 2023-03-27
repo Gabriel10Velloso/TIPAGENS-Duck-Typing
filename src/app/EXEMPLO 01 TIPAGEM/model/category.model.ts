@@ -27,7 +27,7 @@ export class TesteModelA {
     public name2: string,
   ) {
     // this.model = new TesteModel();
-    this.name2 = "your string value here -- TesteModelA"; // dessa forma posso inicialisar o calor aqui.
+    this.name2 = "your string value here -- TesteModelA"; // dessa forma posso inicialisar o valor aqui.
   }
 }
 
@@ -41,7 +41,7 @@ export class TesteModelC {
   public model: TesteModelB;
   constructor() {
     this.model = new TesteModelB();
-    this.model.name2 = "your string value here -- TesteModelB"; // dessa forma posso inicialisar o calor aqui.
+    this.model.name2 = "your string value here -- TesteModelB"; // dessa forma posso inicialisar o valor aqui.
   }
 }
 
