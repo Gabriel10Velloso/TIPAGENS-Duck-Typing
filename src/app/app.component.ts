@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ICategory } from './EXEMPLO 01 TIPAGEM/interface/category.interface';
 import { TesteModelB, TesteModelA, TesteModelC } from './EXEMPLO 01 TIPAGEM/model/category.model';
 
 @Component({
@@ -11,8 +12,9 @@ export class AppComponent implements OnInit {
   valueB!: TesteModelB
   valueC!: TesteModelC
 
-  constructor(){
+  employee!: ICategory
 
+  constructor(){
   }
 
 
@@ -30,5 +32,15 @@ export class AppComponent implements OnInit {
     // TESTE C
     this.valueC = new TesteModelC()
     console.log('Teste C', this.valueC.model.name2)
+
+    // TESTE EMPLOYEE
+    this.employee = {
+      name: 'Gabriel',
+      lastName: 'Velloso',
+      getFullName(): string {
+        return `${this.name} ${this.lastName}`
+      }
+    }
+    console.log('this.employee.getFullName() ->>>' , this.employee.getFullName())
   }
 }
