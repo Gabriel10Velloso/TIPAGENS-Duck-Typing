@@ -7,7 +7,6 @@ export class BaseRepository<Model extends MEntity> { // seve para ser integrado 
     return []
   }
 
-
   findOne(id: Model) {
     return null
   }
